@@ -18,7 +18,7 @@
       <link href="/css/alertify-bootstrap.min.css" rel="stylesheet" />
       <link href="/css/decentrexstyle.css" rel="stylesheet"/>
       <link href="/css/small.css" rel="stylesheet" media="only screen and (max-device-width: 480px)" />
-      <title>DECENTREX - decentralized cryptocurrency exchange for Ethereum and tokens.</title>
+      <title>ETHBETA - decentralized cryptocurrency exchange for Ethereum and tokens.</title>
    </head>
    <body>
       <nav class="navbar navbar-default">
@@ -32,7 +32,7 @@
                <span class="icon-bar"></span>
                </button>
                <a class="navbar-brand" href="/">
-               <i class="fa fa-database" aria-hidden="true"></i> DECENTREX
+               <i class="fa fa-database" aria-hidden="true"></i> ETHBETA
                </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -53,47 +53,47 @@
          </div>
          <!-- /.container-fluid -->
       </nav>
+      
       <div class="container-fluid">
-         <div class="row">
-            <h1>WELCOME TO DECENTREX</h1>
-            <center><strong>Start 580+ Ethereum tokens trading</strong></center>
-            <section class="features-list">
-               <div class="row">
-                  <div class="col-md-4 col-sm-6">
-                     <h4><i class="fa fa-globe" aria-hidden="true"></i> Decentralized Ethereum exchange</h4>
-                     Decentrex is powered by Ethereum smart contract you interact with this page.
+    	<!-- Address -->
+         <div class="modal fade" id="accountModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                     <h4 class="modal-title trn">import_account</h4>
                   </div>
-                  <div class="col-md-4 col-sm-6">
-                     <h4><i class="fa fa-heart-o" aria-hidden="true"></i> Smart contract powered</h4>
-                     Ethereum smart contract is a heart of Decentrex, it is stored in blockchain.
+                  <div class="modal-body">
+                     <form>
+                        <div class="form-group">
+                           <label for="accountAddr" class="trn">address</label>
+                           <input type="text" class="form-control" id="accountAddr" placeholder="0x..." />
+                        </div>
+                        <div id="pkDiv">
+                           <div class="form-group">
+                              <label for="accountPk" class="trn">private_key</label>
+                              <input type="text" class="form-control" id="accountPk" placeholder="0x..." />
+                           </div>
+                        </div>
+                     </form>
                   </div>
-                  <div class="col-md-4 col-sm-6">
-                     <h4><i class="fa fa-github" aria-hidden="true"></i> Open Source</h4>
-                     Decentrex is an <a href="https://github.com/decentrex/decentrex.github.io" target="_blank">open source</a> project, you are free to research and improve it.
-                  </div>
-                  <div class="col-md-4 col-sm-6">
-                     <h4><i class="fa fa-money" aria-hidden="true"></i> Trade Ethereum and any $ETH token</h4>
-                     It is unlimited, you can trade any Ethereum based tokens here.
-                  </div>
-                  <div class="col-md-4 col-sm-6">
-                     <h4><i class="fa fa-search" aria-hidden="true"></i> Transparent with blockchain</h4>
-                     Every single trade and transaction can be observed in <a href="https://etherscan.io/address/0xbf29685856fae1e228878dfb35b280c0adcc3b05" target="_blank">Ethereum blockchain</a>.
-                  </div>
-                  <div class="col-md-4 col-sm-6">
-                     <h4><i class="fa fa-shield" aria-hidden="true"></i> Censorship protection and no registration</h4>
-                     Decentrex has strong censorship protection due to its decentralized essence. 
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-default trn" data-dismiss="modal">cancel</button>
+                     <button type="button" class="btn btn-primary trn" id="accountSubmit">import_account</button>
                   </div>
                </div>
-            </section>
+            </div>
+         </div>
+         <div class="row">
             <div class="col-md-7">
                <div class="row-container">
                   <div class="row-header trn">price_chart</div>
-                  <div class="row-box nav-header">
-                     <ul class="nav nav-tabs two columns" role="tablist">
-                        <li role="presentation" class="active"><a href="#chartPrice" aria-controls="chartPrice" role="tab" data-toggle="tab" class="trn">price</a></li>
-                        <li role="presentation"><a href="#chartDepth" aria-controls="chartDepth" role="tab" data-toggle="tab" class="trn">depth</a></li>
-                     </ul>
-                  </div>
+            		<div class="row-box nav-header">
+              			<ul class="nav nav-tabs two columns" role="tablist">
+                		<li role="presentation" class="active"><a href="#chartPrice" aria-controls="chartPrice" role="tab" data-toggle="tab" class="trn">price</a></li>
+                		<li role="presentation"><a href="#chartDepth" aria-controls="chartDepth" role="tab" data-toggle="tab" class="trn">depth</a></li>
+              			</ul>
+            		</div>
                   <div class="row-box height2">
                      <div class="tab-content" style="height: 100%;">
                         <div role="tabpanel" class="tab-pane active" id="chartPrice" style="height: 100%; width: 100%; background: #00796b;"></div>
@@ -176,38 +176,6 @@
                            <div role="tabpanel" class="tab-pane" id="myOrders"></div>
                         </div>
                      </div>
-                  </div>
-               </div>
-               <div class="row-header trn">IRC CHAT CHANNEL
-               </div>
-              <iframe src="https://kiwiirc.com/client?settings=ff8e80fdc6ad75f40eb4d113732dd04b" style="border:0; width:100%; height:400px;"></iframe>
-            </div>
-         </div>
-         <!-- Address -->
-         <div class="modal fade" id="accountModal" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-sm" role="document">
-               <div class="modal-content">
-                  <div class="modal-header">
-                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                     <h4 class="modal-title trn">import_account</h4>
-                  </div>
-                  <div class="modal-body">
-                     <form>
-                        <div class="form-group">
-                           <label for="accountAddr" class="trn">address</label>
-                           <input type="text" class="form-control" id="accountAddr" placeholder="0x..." />
-                        </div>
-                        <div id="pkDiv">
-                           <div class="form-group">
-                              <label for="accountPk" class="trn">private_key</label>
-                              <input type="text" class="form-control" id="accountPk" placeholder="0x..." />
-                           </div>
-                        </div>
-                     </form>
-                  </div>
-                  <div class="modal-footer">
-                     <button type="button" class="btn btn-default trn" data-dismiss="modal">cancel</button>
-                     <button type="button" class="btn btn-primary trn" id="accountSubmit">import_account</button>
                   </div>
                </div>
             </div>
@@ -381,111 +349,8 @@
                </div>
             </div>
          </div>
-         <!--   FOOTER START================== -->
       </div>
-      <footer class="footer">
-         <div class="container">
-            <div class="row">
-               <div class="col-sm-4">
-                  <h4 class="title">
-                     <i class="fa fa-file-text-o" aria-hidden="true">
-</i> DISCLAIMER. NO WARRANTY. HIGH RISKS. </h4>
-<p>
-Please note that Ethereum and smart contracts is still experimental and Decentrex comes with NO WARRANTY. Please make sure you have backups of your private keys and do not use this for more than you are willing to lose. You are responsible for your own account, funds, and private keys. You are responsible for your own trading decisions, and the details and mechanics of the tokens you trade. Decentrex is not responsible for your decisions, actions, or losses that result from using Decentrex. Decentrex makes no guarantee about the tokens that you trade using Decentrex. Decentrex does not hold your funds and does not offer refunds. While the information contained on Decentrex is periodically updated, no guarantee is given that the information provided on Decentrex is correct, complete, or up-to-date. By using Decentrex, you acknowledge this and agree to these terms. 
-</p>
-               </div>
-               <div class="col-sm-2">
-                  <h4 class="title">Know more
-                  </h4>
-                  <span class="acount-icon">          
-                  <a target="_blank" href="https://www.ethereum.org/">
-                  <i class="fa fa-money" aria-hidden="true">
-                  </i> Ethereum & tokens
-                  </a>
-                  <a target="_blank" href="https://en.wikipedia.org/wiki/Smart_contract">
-                  <i class="fa fa-cart-plus" aria-hidden="true">
-                  </i> Smart contracts
-                  </a>
-                  <a target="_blank" href="https://etherscan.io/address/0xbF29685856FAE1e228878DFB35B280C0adCC3B05">
-                  <i class="fa fa-file-code-o" aria-hidden="true">
-                  </i> Decentrex smart contract
-                  </a>
-                  <a target="_blank" href="https://decentrex.com/markets.html">
-                  <i class="fa fa-bank" aria-hidden="true">
-                  </i> Decentrex markets
-                  </a>
-                  <a target="_blank" href="https://decentrex.com/sitemap.xml">
-                  <i class="fa fa-map-o" aria-hidden="true">
-                  </i> Sitemap
-                  </a>
-                  </span> 
-               </div>
-               <div class="col-sm-3">
-                  <h4 class="title">Exchange announcements
-                  </h4>
-                  <div class="category"> 
-                  <ul>
-                   <li>November 15, 2017. 540+ Ethereum tokens. Updates.
-                  </li>
-                   <li>October 29, 2017. New Ethereum tokens. 450+. Updates.
-                  </li>
-                  <li>September 24, 2017. New Ethereum tokens. API updates.
-                  </li>
-                  <li>August 13, 2017. Major decentrex update #2. Please, clean browser cache. 
-                  </li>
-                  <li>June 21, 2017. New tokens: SNT, VERI and AMIS. Active Patientory PTOY trading @ Decentrex.
-                  </li>
-                  <li>Decentralized cryptocurrency exchange Birthday is May 25, 2017. P2P Blockchain Ethereum tokens trading at DECENTREX with no registration and no limits.
-                  </li>
-               </ul>
-                  </div>
-               </div>
-               <div class="col-sm-3">
-                  <h4 class="title">DECENTREX features
-                  </h4>
-                  <p>Cryptocurrency exchange as it should be.
-                  </p>
-                  <ul class="payment">
-                     <li>
-                        <i aria-hidden="true" class="fa fa-globe">
-                        </i> Decentralized.
-                     </li>
-                     <li>
-                        <i aria-hidden="true" class="fa fa-github">100% Open Source. Served from GitHub.
-                        </i>
-                     </li>
-                     <li>
-                        <i aria-hidden="true" class="fa fa-file-code-o">
-                        </i> Based on ETH smart contract.
-                     </li>
-                     <li>
-                        <i aria-hidden="true" class="fa fa-money">
-                        </i> No limits, no barriers.
-                     </li>
-                     <li>
-                        <i aria-hidden="true" class="fa fa-bullhorn">
-                        </i> No registration, no censorship.
-                     </li>
-                     <li>
-                        <i aria-hidden="true" class="fa fa-desktop">
-                        </i> Works in browser on any device and OS.
-                     </li>
-                     <li>
-                        <i aria-hidden="true" class="fa fa-bank">Build-in ETH and token wallets.
-                        </i>
-                     </li>
-                     <li>
-                        <i aria-hidden="true" class="fa fa-thumbs-o-up">No or low fee.
-                        </i>
-                     </li>
-                  </ul>
-               </div>
-            </div>
-            <hr>
-            <div class="row text-center"> © 2017. DECENTREX. Decentralized Ethereum tokens exchange.
-            </div>
-         </div>
-      </footer>
+      
       <script>
          function myFunction() {
            var input, filter, table, tr, td, i;
