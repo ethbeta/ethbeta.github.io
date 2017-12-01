@@ -70,8 +70,8 @@ if (cliOptions.help) {
 
   // Config
   const solidityFile = './smart_contract/decentrex.sol';
-  const contractName = 'DecentrEx';
-  const solcVersion = 'v0.4.9+commit.364da425';
+  const contractName = 'NEOCASHToken';
+  const solcVersion = 'v0.4.8+commit.60cc1668';
   const address = cliOptions.address;
   const admin = cliOptions.admin;
   const feeAccount = cliOptions.feeAccount;

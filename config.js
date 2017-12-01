@@ -1,12 +1,12 @@
 /* eslint-env browser */
 
 module.exports = {
-  homeURL: 'https://decentrex.com',
+  homeURL: 'https://ethbeta.com',
   contractDecentrEx: 'smart_contract/decentrex.sol',
   contractToken: 'smart_contract/token.sol',
   contractReserveToken: 'smart_contract/reservetoken.sol',
   contractDecentrExAddrs: [
-    { addr: '0xbf29685856fae1e228878dfb35b280c0adcc3b05', info: 'Deployed 05/26/2017' },
+    { addr: '0xb9e8a9163b88fb463c6e1ebe090a0481b870cec7', info: 'Deployed 11/26/2017' },
   ],
   ethTestnet: false,
   ethProvider: 'http://localhost:8545',
