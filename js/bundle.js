@@ -1193,7 +1193,7 @@ module.exports = {
   contractToken: 'smart_contract/token.sol',
   contractReserveToken: 'smart_contract/reservetoken.sol',
   contractDecentrExAddrs: [
-    { addr: '0xbf29685856fae1e228878dfb35b280c0adcc3b05', info: 'Deployed 05/26/2017' },
+    { addr: '0xB9E8A9163b88FB463C6E1ebE090a0481b870cEC7', info: 'Deployed 05/26/2017' },
   ],
   ethTestnet: false,
   ethProvider: 'http://localhost:8545',
