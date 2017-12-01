@@ -1214,6 +1214,7 @@ module.exports = {
   etherscanAPIKey: 'KF9ADFTHP4WJF1GV3WHJZCTFZIN5XZUXG1',
      tokens: [
    { addr: '0x0000000000000000000000000000000000000000', name: 'ETH', decimals: 18 },
+{ addr: '0xc5de7ac5ea11651f25c0738efa176010553bc323', name: 'NEOC', decimals: 18 },
 { addr: '0x8e10f6bb9c973d61321c25a2b8d865825f4aa57b', name: '0ED', decimals: 18 },
 { addr: '0xe701cd3329057aea9d54300ddd05e41b8d74727a', name: '10MT', decimals: 10 },
 { addr: '0x9742fa8cb51d294c8267ddfead8582e16f18e421', name: '10MTI', decimals: 10 },
