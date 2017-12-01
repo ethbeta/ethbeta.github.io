@@ -1188,7 +1188,7 @@ module.exports = (config) => {
 /* eslint-env browser */
 
 module.exports = {
-  homeURL: 'https://ethbeta.com',
+  homeURL: 'https://decentrex.com',
   contractDecentrEx: 'smart_contract/decentrex.sol',
   contractToken: 'smart_contract/token.sol',
   contractReserveToken: 'smart_contract/reservetoken.sol',
